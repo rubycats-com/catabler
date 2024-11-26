@@ -5,9 +5,9 @@ Gem::Specification.new do |spec|
   spec.version     = Catabler::VERSION
   spec.authors     = [ "Yuriy Kirillov" ]
   spec.email       = [ "ykirillov@icloud.com" ]
-  spec.homepage    = "TODO"
-  spec.summary     = "TODO: Summary of Catabler."
-  spec.description = "TODO: Description of Catabler."
+  spec.homepage    = "https://github.com/rubycats-com/catabler"
+  spec.summary     = "Tabler ruby gem for Ruby on Rails 8"
+  spec.description = "tabler.io ruby gem"
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
@@ -15,12 +15,14 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/rubycats-com/catabler"
+  spec.metadata["changelog_uri"] = "https://github.com/rubycats-com/catabler/CHANGELOG.md"
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   end
 
   spec.add_dependency "rails", ">= 8.0.0"
+  spec.add_dependency "propshaft"
+  spec.add_dependency "importmap-rails"
 end
