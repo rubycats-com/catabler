@@ -1,8 +1,5 @@
 # Catabler
-Short description and motivation.
-
-## Usage
-How to use my plugin.
+[Tabler](https://tabler.io/) ruby gem for Ruby on Rails 8
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -11,18 +8,20 @@ Add this line to your application's Gemfile:
 gem "catabler"
 ```
 
-And then execute:
-```bash
-$ bundle
+And css to application.css
+```css
+@import url("./tabler.min.css");
 ```
 
-Or install it yourself as:
-```bash
-$ gem install catabler
+Pin in importmap.rb
+```ruby
+pin "tabler", to: "tabler.esm.min.js"
 ```
 
-## Contributing
-Contribution directions go here.
+Import in application.js
+```ruby
+import "tabler"
+```
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
