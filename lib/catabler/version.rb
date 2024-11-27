@@ -1,3 +1,3 @@
 module Catabler
-  VERSION = "1.0.0-beta15.1"
+  VERSION = "1.0.0-beta20.1"
 end
